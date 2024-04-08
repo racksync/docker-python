@@ -25,10 +25,14 @@ docker build -t python-docker .
 
 2. Run the container
 ```
-docker run -d --name python-app -p 8080:8080 python-docker
+docker run -d --name --restart unless-stopped python-app -p 8080:8080 python-docker
 ```
 
 3. Access the application
 ```
 http://localhost:8080/quote
+```
+
+4. Push Docker Image
+```
 ```
